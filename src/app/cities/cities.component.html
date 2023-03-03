@@ -1,0 +1,27 @@
+<div class="cities-container">
+
+  <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+  <table class="GeneratedTable">
+    <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Code</th>
+      <th>Département</th>
+      <th>Code Postaux</th>
+      <th>Population</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let city of cities">
+      <td>{{city.nom}}</td>
+      <td>{{city.code}}</td>
+      <td>{{getDepartementName(city.codeDepartement)}}</td>
+      <td>{{city.codesPostaux}}</td>
+      <td>{{city.population}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+</div>

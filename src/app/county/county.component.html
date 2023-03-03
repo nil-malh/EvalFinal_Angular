@@ -1,0 +1,23 @@
+<div class="county-container">
+
+  <!-- HTML Code: Place this code in the document's body (between the 'body' tags) where the table should appear -->
+  <table class="GeneratedTable">
+    <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Code</th>
+      <th>Code Région</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let county of counties">
+      <td>{{county.nom}}</td>
+      <td routerLink="{{county.code}}/cities">{{county.code}}</td>
+      <td>{{county.codeRegion}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+</div>

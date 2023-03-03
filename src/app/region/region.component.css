@@ -1,0 +1,39 @@
+
+.regions-container
+{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+table.GeneratedTable {
+  width: 80%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #ffcc00;
+}
+
+
+.router-link
+{
+  text-decoration: underline aquamarine;
+  cursor: pointer;
+}
+

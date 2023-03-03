@@ -1,0 +1,40 @@
+<nav [ngClass]="classNavbar" class="navbar-list navbar navbar-expand-lg">
+  <div class="container-fluid mx-auto">
+    <button class="navbar-toggler mx-auto" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+
+      <ul [ngClass]="navbarType" class="navbar-list d-flex align-items-center justify-content-center navbar-nav mx-auto container-fluid unselectable">
+        <li [ngClass]="navbarType" class="navbar-component-first nav-item">
+          <a class="navbar-link nav-link" [ngClass]="getThemeClass()" routerLink="/accueil">Accueil</a>
+        </li>
+
+        <li [ngClass]="navbarType" class="navbar-component nav-item">
+          <a class="navbar-link nav-link" [ngClass]="getThemeClass()" routerLink="/api">API</a>
+        </li>
+
+        <li [ngClass]="navbarType" class="navbar-component nav-item">
+          <a class="navbar-link nav-link" [ngClass]="getThemeClass()" routerLink="">...</a>
+        </li>
+
+        <li [ngClass]="navbarType" class="nav-item mx-auto me-2">
+          <fa-icon class="icon"
+                   [icon]="value"
+                   (click)="toggleTheme()"
+                   [ngClass]="navbarType"
+          >
+          </fa-icon>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <p class="copyright-text">©Desgined by Thibzee 2023.</p>
+

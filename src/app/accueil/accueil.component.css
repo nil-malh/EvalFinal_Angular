@@ -1,0 +1,87 @@
+.paragraphe {
+  width: 50vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+
+.element {
+  height: 30rem;
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.button {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0.1em 0.1em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.show {
+  transition: 2s linear;
+  opacity: 1;
+  visibility:visible ;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button-project span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8em;
+  margin: auto;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.button-project span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.button-project span:not(hover) {
+  transition: all 1s;
+}
+
+@media screen and (max-width: 769px) {
+  .paragraphe {
+    width: 80vw;
+    font-size: 1.6rem ;
+  }
+}
+@media screen and (max-width: 426px) {
+   h1 {
+     font-size: 1.5rem;
+   }
+  .paragraphe {
+    font-size: 1rem;
+  }
+}
